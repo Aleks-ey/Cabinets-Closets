@@ -124,24 +124,24 @@ import Reviews from '../components/Reviews.vue';
 		<div class="service_circles flex-col md:flex-row">
 			<div class="circle_box">
 				<div class="circle">
-					<img src="/assets/closet_with_clothes.jpg" alt="Kitchen Remodeling">
+					<img src="/assets/closet_with_clothes.jpg" alt="Closet with clothes">
 				</div>
 				<div class="circle_overlay">Custom Closets</div>
-				<a href="/kitchen-remodeling" class="circle_button">Read More</a>
+				<a href="/closets" class="circle_button">Read More</a>
 			</div>
 			<div class="circle_box">
 				<div class="circle">
-					<img src="/assets/modern_bathroom_cabinets.jpg" alt="Basement Finish">
+					<img src="/assets/modern_bathroom_cabinets.jpg" alt="Modern bathroom cabinets">
 				</div>
 				<div class="circle_overlay">Beautiful Cabinets</div>
-				<a href="/basement-finish" class="circle_button">Read More</a>
+				<a href="/cabinets" class="circle_button">Read More</a>
 			</div>
 			<div class="circle_box">
-				<div class="circle">
-					<img src="/assets/modern_kitchen_gray_white_granite.jpg" alt="Bathroom Remodeling">
-				</div>
-				<div class="circle_overlay">Kitchen Remodeling</div>
-				<a href="/bathroom-remodeling" class="circle_button">Read More</a>
+				<!-- <div class="circle"> -->
+					<img src="/assets/guaranteed.png" alt="Satisfaction Guaranteed" class="sat_guar">
+				<!-- </div> -->
+				<div class="circle_overlay">Our Warranty</div>
+				<a href="/warranty" class="circle_button">Read More</a>
 			</div>
 			<div class="plans"></div>
 		</div>
@@ -256,6 +256,12 @@ import Reviews from '../components/Reviews.vue';
 		overflow: hidden;
 		position: relative;
     }
+
+	.sat_guar {
+		max-width: 260px;
+		height: auto;
+		display: block;
+	}
 
 	.circle img {
 		max-width: 300px;

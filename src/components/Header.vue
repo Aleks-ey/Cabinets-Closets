@@ -57,6 +57,7 @@
 
         <!-- Mobile Nav Popup -->
         <div v-if="mobileNavPopupVisible" class="mobile-nav-popup">
+            
             <div class="popup-content">
                 <p class="font-bold mb-2">Contact us for a free estimate!</p>
                 <p>Email: info.cabinetsandclosets@gmail.com</p>
