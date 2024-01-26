@@ -1,6 +1,6 @@
 <template>
     <!-- Reviews Section -->
-    <div class="mt-32 py-8 px-4 bg-gray-100">
+    <div class="mt-32 mb-20 py-8 px-4 bg-gray-100">
         <div class="max-w-6xl mx-auto md:px-20">
             <h2 class="text-3xl font-bold text-center text-black">Feedback from our happy clients</h2>
             <swiper :options="swiperOptions">
