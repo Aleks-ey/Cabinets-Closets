@@ -5,7 +5,7 @@
           <img :src="item.url" :alt="item.caption" />
         </div>
         <div v-else-if="item.type === 'video'">
-          <video :src="item.url" autoplay></video>
+          <video :src="item.url" autoplay controlslist="nofullscreen"></video>
         </div>
         <p class="overlay-text">{{ item.caption }}</p>
       </div>

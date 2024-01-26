@@ -28,6 +28,9 @@
 			<a href="/faq" class="link text-white hover:text-purple-500">FAQ</a>
 			<a href="/process" class="link text-white hover:text-purple-500">Process</a>
 			<a href="/warranty" class="link text-white hover:text-purple-500">Warranty</a>
+            <button class="md:hidden bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600" @click="toggleMenu(), toggleMobileNavPopup()">
+                Free Estimate
+            </button>
         </nav>
 	
 		<!-- Navigation in the middle (Desktop) -->
@@ -51,6 +54,17 @@
 
         <!-- Free Estimate Popup -->
         <FreeEstimatePopup/>
+
+        <!-- Mobile Nav Popup -->
+        <div v-if="mobileNavPopupVisible" class="mobile-nav-popup">
+            <div class="popup-content">
+                <p class="font-bold mb-2">Contact us for a free estimate!</p>
+                <p>Email: info.cabinetsandclosets@gmail.com</p>
+                <p>Phone: (561) 221-2681</p>
+                <button @click="toggleMobileNavPopup()" class="mt-4 bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">Close</button>
+            </div>
+        </div>
+
     </header>
 </template>
 
@@ -70,6 +84,7 @@
             const isDropdownVisible = ref(false);
             let isMouseOverDropdown = false;
             const logoClass = ref(false);
+            const mobileNavPopupVisible = ref(false);
 
             function updateClasses() {
                 if (window.scrollY > 0) {
@@ -113,6 +128,10 @@
                 }, 300); // Delay before hiding the dropdown
             };
 
+            function toggleMobileNavPopup() {
+                mobileNavPopupVisible.value = !mobileNavPopupVisible.value;
+            }
+
             function redirectToHome() {
                 window.location.href = '/';
             }
@@ -129,6 +148,8 @@
                 isDropdownVisible,
                 logoClass,
                 redirectToHome,
+                mobileNavPopupVisible,
+                toggleMobileNavPopup,
             };
         }
     };
@@ -168,15 +189,6 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-    }
-
-    /* Hamburger Icon Style */
-    .hamburger div {
-        width: 30px;
-        height: 3px;
-        background-color: black;
-        margin: 6px 0;
-        transition: 0.4s;
     }
 
     .hamburger {
@@ -222,11 +234,23 @@
         transform: translateY(-100px);
     }
 
-    .hamburgerMenu a {
+    #hamburgerMenu a {
         display: block;
         color: white;
         font-size: 1.5rem;
         text-decoration: none;
+    }
+
+    #hamburgerMenu div {
+        display: block;
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+
+    #hamburgerMenu button {
+        transform: translateY(-70px);
+        font-size: large;
     }
 
     .hamburger div {
@@ -280,6 +304,29 @@
 
     .mobile_group_dropdown {
         line-height: 2.5rem;
+    }
+
+    .mobile-nav-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup-content {
+        font-size: larger;
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        border: 2px solid purple;
+        opacity: 100% !important;
     }
 
     .largeLogo {
