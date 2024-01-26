@@ -1,8 +1,11 @@
 <template>
     <header :class="headerClass">
         <!-- Logo on the left -->
-		<div :class="logoClass">
-			<img src="../../C&C_logo_white.svg" width="auto" height="auto" alt="Logo" class="max-h-36"/>
+		<div>
+            <object type="image/svg+xml" data="../../C&C_logo_white.svg" :class="logoClass" class="max-h-36">
+                <!-- Fallback image in case SVG is not supported -->
+                <img src="../../C&C_logo_white.svg" alt="Logo" :class="logoClass" class="max-h-36"/>
+            </object>
 		</div>
 
         <button id="hamburger" class="hamburger block md:hidden" @click="toggleMenu()">
@@ -67,24 +70,6 @@
             const isDropdownVisible = ref(false);
             let isMouseOverDropdown = false;
             const logoClass = ref(false)
-
-            // let hideTimeout = null;
-
-            // function updateHeaderClass() {
-            //     if (window.scrollY > 0) {
-            //         headerClass.value = 'smallHeader';
-            //     } else {
-            //         headerClass.value = 'largeHeader';
-            //     }
-            // }
-
-            // function updateHamburgerMenuClass() {
-            //     if (window.scrollY > 0) {
-            //         hamburgerMenuClass.value = 'smallHamburgerMenu';
-            //     } else {
-            //         hamburgerMenuClass.value = 'largeHamburgerMenu';
-            //     }
-            // }
 
             function updateClasses() {
                 if (window.scrollY > 0) {
