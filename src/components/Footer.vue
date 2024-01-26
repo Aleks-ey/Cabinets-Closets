@@ -16,7 +16,7 @@
                     Email: info.cabinetsandclosets@gmail.com
                 </p>
                 <p class="text-gray-400">
-                    Phone: (720) 924-2962
+                    Phone: (561) 221-2681
                 </p>
                 <!-- <p class="text-gray-400">
                     Appointments: Cabinets&Closets.com

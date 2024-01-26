@@ -2,8 +2,8 @@
     <header :class="headerClass">
         <!-- Logo on the left -->
 		<div>
-            <img src="../../C&C_logo_white.svg" alt="Logo" :class="logoClass" class="hidden md:block max-h-36"/>
-            <img src="../../C&C_logo_white.png" alt="Logo" :class="logoClass" class="block md:hidden max-h-36"/>
+            <img src="../../C&C_logo_white.svg" alt="Logo" :class="logoClass" class="hidden md:block max-h-36" @click="redirectToHome"/>
+            <img src="../../C&C_logo_white.png" alt="Logo" :class="logoClass" class="block md:hidden max-h-36" @click="redirectToHome"/>
 		</div>
 
         <button id="hamburger" class="hamburger block md:hidden" @click="toggleMenu()">
@@ -48,18 +48,20 @@
 			<a href="/process" class="text-white hover:text-purple-500">Process</a>
 			<a href="/warranty" class="text-white hover:text-purple-500">Warranty</a>
 		</nav>
-	
-		<!-- Button on the right -->
-		<button class="hidden md:block bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">
-			Free Estimate
-		</button>
+
+        <!-- Free Estimate Popup -->
+        <FreeEstimatePopup/>
     </header>
 </template>
 
 <script>
     import { ref, onMounted, onUnmounted } from 'vue';
+    import FreeEstimatePopup from './FreeEstimatePopup.vue';
 
     export default {
+        components: {
+            FreeEstimatePopup,
+        },
         setup() {
             const headerClass = ref('largeHeader');
             const hamburgerMenuVisible = ref(false);
@@ -67,7 +69,7 @@
             const servicesDropdownVisible = ref(false);
             const isDropdownVisible = ref(false);
             let isMouseOverDropdown = false;
-            const logoClass = ref(false)
+            const logoClass = ref(false);
 
             function updateClasses() {
                 if (window.scrollY > 0) {
@@ -82,20 +84,15 @@
             }
 
             onMounted(() => {
-                // window.addEventListener('scroll', updateHeaderClass);
-                // window.addEventListener('scroll', updateHamburgerMenuClass);
                 window.addEventListener('scroll', updateClasses);
             });
 
             onUnmounted(() => {
-                // window.removeEventListener('scroll', updateHeaderClass);
-                // window.removeEventListener('scroll', updateHamburgerMenuClass);
                 window.removeEventListener('scroll', updateClasses);
             });
 
             function toggleMenu() {
                 hamburgerMenuVisible.value = !hamburgerMenuVisible.value;
-                console.log(hamburgerMenuVisible.value);
             }
 
             function toggleServicesDropdown() {
@@ -116,7 +113,9 @@
                 }, 300); // Delay before hiding the dropdown
             };
 
-            
+            function redirectToHome() {
+                window.location.href = '/';
+            }
 
             return { 
                 headerClass, 
@@ -129,12 +128,12 @@
                 hideDropdown,
                 isDropdownVisible,
                 logoClass,
+                redirectToHome,
             };
         }
     };
-
-    
 </script>
+
 
 <style scoped>
     .largeHeader {
