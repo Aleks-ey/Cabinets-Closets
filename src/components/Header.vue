@@ -179,6 +179,11 @@
         transition: 0.4s;
     }
 
+    .hamburger {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
     .largeHamburgerMenu {
         display: flex;
         position: fixed;
@@ -194,7 +199,6 @@
         flex-direction: column;
         row-gap: 30px;
         text-align: center;
-        /* font-size: xx-large; */
     }
 
     .smallHamburgerMenu {
