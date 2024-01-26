@@ -2,7 +2,7 @@
     <header :class="headerClass">
         <!-- Logo on the left -->
 		<div :class="logoClass">
-			<img src="../../C&C_logo_white.svg" alt="Logo" class="max-h-36"/>
+			<img src="../../C&C_logo_white.svg" width="auto" height="auto" alt="Logo" class="max-h-36"/>
 		</div>
 
         <button id="hamburger" class="hamburger block md:hidden" @click="toggleMenu()">
