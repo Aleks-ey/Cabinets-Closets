@@ -2,10 +2,8 @@
     <header :class="headerClass">
         <!-- Logo on the left -->
 		<div>
-            <object type="image/svg+xml" data="../../C&C_logo_white.svg" :class="logoClass" class="max-h-36">
-                <!-- Fallback image in case SVG is not supported -->
-                <img src="../../C&C_logo_white.svg" alt="Logo" :class="logoClass" class="max-h-36"/>
-            </object>
+            <img src="../../C&C_logo_white.svg" alt="Logo" :class="logoClass" class="hidden md:block max-h-36"/>
+            <img src="../../C&C_logo_white.png" alt="Logo" :class="logoClass" class="block md:hidden max-h-36"/>
 		</div>
 
         <button id="hamburger" class="hamburger block md:hidden" @click="toggleMenu()">
