@@ -23,6 +23,7 @@
                 <div v-if="servicesDropdownVisible" class="mobile_group_dropdown text-white p-2 mt-1 rounded">
                     <a href="/cabinets" class="block hover:text-purple-500">Custom Cabinets</a>
                     <a href="/closets" class="block hover:text-purple-500">Closets</a>
+                    <a href="/installation" class="block hover:text-purple-500">Installation</a>
                 </div>
             </div>
 			<a href="/faq" class="link text-white hover:text-purple-500">FAQ</a>
@@ -43,8 +44,9 @@
                     @mouseenter="showDropdown"
                     @mouseleave="hideDropdown"
                 >
-                    <a href="/cabinets" class="block hover:text-purple-500">Kitchen and Bathroom Cabinets</a>
-                    <a href="/closets" class="block hover:text-purple-500">Closets</a>
+                    <a href="/cabinets" class="block hover:text-purple-500">Cabinet Fabrication</a>
+                    <a href="/closets" class="block hover:text-purple-500">Closet Fabrication</a>
+                    <a href="/installation" class="block hover:text-purple-500">Installation</a>
                 </div>
             </div>
 			<a href="/faq" class="text-white hover:text-purple-500">FAQ</a>

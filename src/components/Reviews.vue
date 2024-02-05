@@ -32,27 +32,27 @@
             reviews: [
             {
                 photo: '/assets/woman_icon.webp',
-                text: 'Thanks for the wonderful bathroom remodel. It couldn`t have turned out any better. Your design team worked with my wife to draw up the plans and selected the colors, accessories and timeline. Your crew did a flawless job removing the old and installing the new. The tiling is really a work of art. We love the new bathroom. Its modern and up to date as well as appears bigger and more open. I`m a tough guy to please but you really did a great job. We will keep you in mind for any future restorations and will recommend your company to friends.',
+                text: 'Thanks for the wonderful bathroom remodel. It couldn`t have turned out any better. Your design team worked with my wife to draw up the plans and selected the colors, accessories and timeline. Your crew did a flawless job removing the old and installing the new. We love the new bathroom. Its modern and up to date as well as appears bigger and more open. I`m a tough guy to please but you really did a great job. We will keep you in mind for any future work and will recommend your company to friends.',
                 name: 'Kelly Johnson'
             },
             {
                 photo: '/assets/woman_icon.webp',
-                text: 'uHome Renovation is organized, professional, with skilled qualified workers in every trade who are courteous and can think outside the box with regard to solving problems that they did not create. Take one look at their finished product and it speaks for itself.',
+                text: 'Cabinets & Closets is organized, professional, with skilled qualified workers in every trade who are courteous and can think outside the box with regard to solving problems that they did not create. Take one look at their finished product and it speaks for itself.',
                 name: 'Sophia Jones'
             },
             {
                 photo: '/assets/man_profile.png',
-                text: 'We wanted to take this opportunity to provide feedback and appreciation with our house remodeling project that uHome Renovation is performed.',
+                text: 'We wanted to take this opportunity to provide feedback and appreciation with our kitchen cabinet remodeling project that Cabinets and Closets performed.',
                 name: 'Harold Green'
             },
             {
                 photo: '/assets/man_profile.png',
-                text: 'As promised, the remodel was completed on time and the finished product was beyond our expectation. Thanks again to Sergei, Elena, Coleen, Jean, Dave, Alex and Rubin for all of their support and assistance. We would highly recommend the uHome Team to anyone who is considering any size remodeling project.',
+                text: 'As promised, the remodel was completed on time and the finished product was beyond our expectation. Thanks again to Sergei, Elena, Coleen, Jean, Dave, Alex and Rubin for all of their support and assistance. We would highly recommend the C&C team to anyone who is considering any kind of cabinet remodeling project.',
                 name: 'Grant Harvey'
             },
             {
                 photo: '/assets/woman_icon.webp',
-                text: 'Recently uHome Renovation completed a remodel on our master bathroom, and we wanted to let you know how pleased we were with the results. We love our Marble Palace (as we`ve been calling it), and we are proudly showing it off to everyone. We were particularly happy that it was finished ahead of schedule!',
+                text: 'Recently Cabinets & Closets completed a remodel on our master bathroom, and we wanted to let you know how pleased we were with the results. We love our Marble Palace (as we`ve been calling it), and we are proudly showing it off to everyone. The new cabinets fit in perfectly with the rest of the bathroom and we couldn`t be more happy with the design! We were particularly happy that it was finished ahead of schedule!',
                 name: 'Kate Lewis'
             },
             ],

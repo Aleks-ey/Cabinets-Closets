@@ -34,12 +34,12 @@
               question: 'Why choose Cabinets & Closets?',
               answer: [
                 'We truly care about our customers and give personal attention to each one of them.',
+                'Affordable and fair prices.',
                 'Integrity and honesty from top to bottom.',
                 'Not compromising on less than the best quality vendors, materials and labor in every project.',
                 'Our professional and creative architectural and design team.',
                 'Dedicated crews and field supervisors.',
                 'A clean working environment and a timely schedule results in efficient and smooth projects.',
-                'Affordable and fair prices.',
               ],
               open: false,
               useBulletPoints: true,
@@ -70,7 +70,7 @@
             },
             {
               question: 'Can I make a change after I sign the contract?',
-              answer: 'Yes. While our contract price to you will never change, it’s very ordinary for customers to want to tweak items as construction evolves. We will document each change and give you an upfront and fair price.',
+              answer: 'Yes, it’s very ordinary for customers to want to tweak items as the process evolves. We will document each change and give you an upfront and fair price to review. However, cost of previously purchased material cannot be replaced.',
               open: false,
               useBulletPoints: false,
             },

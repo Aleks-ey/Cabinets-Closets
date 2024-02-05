@@ -32,13 +32,13 @@
           process: [
               {
                 question: 'Initial Consultation',
-                answer: 'We will come to your home at a time convenient for you for a free consultation and to discuss your budget and timeline. At this time you tell us what it is you want from your new project, such as the features and options that are must-haves.',
+                answer: 'A free consultation can be done at your home or over the phone at a time that is convenient for you. At this time you tell us what it is you want from your new project, such as the features and options that are must-haves, and we will discuss your budget and timeline.',
                 open: false,
                 useBulletPoints: false,
               },
               {
                 question: 'Design Consultation',
-                answer: 'Our designer will measure and take pictures of your space for use in developing plans and specifications. Our designer will present 3D views to assist you in visualizing the best use of the space. Once the design has been determined we will finalize the design and begin preparing a more detailed proposal.',
+                answer: 'Our designer will present 3D views to assist you in visualizing the best use of the space. Once the design has been determined we will finalize the design and begin preparing a more detailed proposal.',
                 open: false,
                 useBulletPoints: false,
               },
@@ -50,7 +50,13 @@
               },
               {
                 question: 'Material Selections',
-                answer: 'Materials can be easily selected from our partner vendors, a design center where you can view a wide variety of product styles and finishes, or we can bring a catalog of samples that you can choose from. If you’ve already chosen your materials, we are happy to work with those, too. You’ll be provided a detailed project list for specified items.',
+                answer: 'Materials can be easily selected from our partner vendor`s design center where you can view a wide variety of product styles and finishes. Otherwise, we can bring a catalog of samples that you can choose from. If you’ve already chosen your materials, we are happy to work with those, too. You’ll be provided a detailed project list for specified items.',
+                open: false,
+                useBulletPoints: false,
+              },
+              {
+                question: 'Fabrication',
+                answer: 'After your chosen materials have been delivered to our shop and we have finished product fabrication, we will schedule a time for delivery or installation.',
                 open: false,
                 useBulletPoints: false,
               },
