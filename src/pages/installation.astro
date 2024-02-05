@@ -67,7 +67,6 @@ import OurWork from '../components/OurWork.vue';
         background-color: black;
         padding: 10px;
         max-width: 80%;
-        white-space: nowrap;
     }
 
     .installation_container {
@@ -102,7 +101,11 @@ import OurWork from '../components/OurWork.vue';
         margin-bottom: 1rem;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
+        .overlay-text {
+            text-align: center;
+        }
+
         .container-content h2 {
             font-size: 1.5rem;
         }

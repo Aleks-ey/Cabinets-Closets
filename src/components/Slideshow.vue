@@ -68,7 +68,6 @@
         background-color: black;
         padding: 10px;
         max-width: 80%;
-        /* white-space: nowrap; */
     }
 
     @media screen and (max-width: 768px){
