@@ -74,12 +74,6 @@
               open: false,
               useBulletPoints: false,
             },
-            {
-              question: 'Do you use subcontractors?',
-              answer: 'Yes, partly work performed by Cabinets & Closets is done by subcontractors. We carefully evaluate every trade that is associated with our company to ensure they meet the highest level of business, professional, and workmanship practices. All subcontractors must pass an extensive background check, training, and certifications.',
-              open: false,
-              useBulletPoints: false,
-            },
         ],
       };
     },
