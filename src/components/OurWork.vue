@@ -53,7 +53,7 @@
                     { src: '../assets/work/PHOTO18.jpg'},
                     { src: '../assets/work/PHOTO19.jpg'},
                     { src: '../assets/work/PHOTO20.jpg'},
-                    { src: '../assets/work/PHOTO21.jpg'},
+                    // { src: '../assets/work/PHOTO21.jpg'},
                     { src: '../assets/work/PHOTO22.jpg'},
                     { src: '../assets/work/PHOTO23.jpg'},
                     { src: '../assets/work/PHOTO24.jpg'},
