@@ -1,34 +1,24 @@
 ---
-import { SEO } from 'astro-seo';
 import Footer from '../components/Footer.vue';
 import Header from '../components/Header.vue';
 
 interface Props {
 	title: string;
-	description: string;
 }
 
-const { title, description } = Astro.props;
+const { title } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<SEO 
-			title={title}
-			description={description}
-			charset='UTF-8'
-			extend={{
-				link: [
-					{rel: "icon", type: "image/svg+xml", href: "/C&C_logo_white.svg"},
-					{rel: "stylesheet", href: "https://fonts.googleapis.com/icon?family=Material+Icons"}
-				],
-				meta: [
-					{name: "generator", content: Astro.generator},
-					{name: "viewport", content: "width=device-width"},
-				],
-			}}
-		/>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/C&C_logo_white.svg" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
 	</head>
 	<body>
 		<Header client:load/>
