@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- Your Button -->
-        <button class="hidden md:block bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600" @click="togglePopup">
+        <button class="hidden md:block bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600" @click="togglePopup">
             Free Estimate
         </button>
 
@@ -11,7 +11,7 @@
                 <p class="font-bold mb-2">Contact us for a free estimate!</p>
                 <p>Email: info.cabinetsandclosets@gmail.com</p>
                 <p>Phone: (561) 221-2681</p>
-                <button @click="togglePopup" class="mt-4 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Close</button>
+                <button @click="togglePopup" class="mt-4 bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">Close</button>
             </div>
         </div>
     </div>

@@ -2,8 +2,8 @@
     <header :class="headerClass">
         <!-- Logo on the left -->
 		<div>
-            <img src="../../OwnEnergyLogo.svg" alt="Logo" :class="logoClass" class="hidden md:block max-h-32" @click="redirectToHome"/>
-            <img src="../../OwnEnergyLogo.webp" alt="Logo" :class="logoClass" class="block md:hidden max-h-32" @click="redirectToHome"/>
+            <img src="../../C&C_logo_white.svg" alt="Logo" :class="logoClass" class="hidden md:block max-h-36" @click="redirectToHome"/>
+            <img src="../../C&C_logo_white.png" alt="Logo" :class="logoClass" class="block md:hidden max-h-36" @click="redirectToHome"/>
 		</div>
 
         <button id="hamburger" class="hamburger block md:hidden" @click="toggleMenu()">
@@ -15,43 +15,43 @@
 
         <!-- Hamburger Menu (Mobile) -->
         <nav id="hamburgerMenu" :class="hamburgerMenuClass" v-if="hamburgerMenuVisible">
-            <a href="/" class="link text-white hover:text-orange-500">Home</a>
+            <a href="/" class="link text-white hover:text-purple-500">Welcome</a>
 			<div class="mobile_group">
-                <span @click="toggleServicesDropdown" class="text-white hover:text-orange-500 flex justify-between items-center">
+                <span @click="toggleServicesDropdown" class="text-white hover:text-purple-500 flex justify-between items-center">
                     Services <span class="material-icons">expand_more</span> <!-- Arrow icon -->
                 </span>
                 <div v-if="servicesDropdownVisible" class="mobile_group_dropdown text-white p-2 mt-1 rounded">
-                    <a href="/cabinets" class="block hover:text-orange-500">Custom Cabinets</a>
-                    <a href="/closets" class="block hover:text-orange-500">Closets</a>
-                    <a href="/installation" class="block hover:text-orange-500">Installation</a>
+                    <a href="/cabinets" class="block hover:text-purple-500">Custom Cabinets</a>
+                    <a href="/closets" class="block hover:text-purple-500">Closets</a>
+                    <a href="/installation" class="block hover:text-purple-500">Installation</a>
                 </div>
             </div>
-			<a href="/faq" class="link text-white hover:text-orange-500">FAQ</a>
-			<a href="/process" class="link text-white hover:text-orange-500">Process</a>
-			<a href="/warranty" class="link text-white hover:text-orange-500">Warranty</a>
-            <button class="md:hidden bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600" @click="toggleMenu(), toggleMobileNavPopup()">
+			<a href="/faq" class="link text-white hover:text-purple-500">FAQ</a>
+			<a href="/process" class="link text-white hover:text-purple-500">Process</a>
+			<a href="/warranty" class="link text-white hover:text-purple-500">Warranty</a>
+            <button class="md:hidden bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600" @click="toggleMenu(), toggleMobileNavPopup()">
                 Free Estimate
             </button>
         </nav>
 	
 		<!-- Navigation in the middle (Desktop) -->
 		<nav class="hidden md:flex gap-4">
-			<a href="/" class="text-white hover:text-orange-500">Home</a>
+			<a href="/" class="text-white hover:text-purple-500">Welcome</a>
             <div class="relative desktop_dropdown" @mouseenter="showDropdown" @mouseleave="hideDropdown">
-			    <span class="text-white hover:text-orange-500">Services</span>
+			    <span class="text-white hover:text-purple-500">Services</span>
                 <div class="desktop_dropdown_menu p-2 mt-1 rounded" 
                     v-show="isDropdownVisible"
                     @mouseenter="showDropdown"
                     @mouseleave="hideDropdown"
                 >
-                    <a href="/cabinets" class="block hover:text-orange-500">Cabinet Fabrication</a>
-                    <a href="/closets" class="block hover:text-orange-500">Closet Fabrication</a>
-                    <a href="/installation" class="block hover:text-orange-500">Installation</a>
+                    <a href="/cabinets" class="block hover:text-purple-500">Cabinet Fabrication</a>
+                    <a href="/closets" class="block hover:text-purple-500">Closet Fabrication</a>
+                    <a href="/installation" class="block hover:text-purple-500">Installation</a>
                 </div>
             </div>
-			<a href="/faq" class="text-white hover:text-orange-500">FAQ</a>
-			<a href="/process" class="text-white hover:text-orange-500">Process</a>
-			<a href="/warranty" class="text-white hover:text-orange-500">Warranty</a>
+			<a href="/faq" class="text-white hover:text-purple-500">FAQ</a>
+			<a href="/process" class="text-white hover:text-purple-500">Process</a>
+			<a href="/warranty" class="text-white hover:text-purple-500">Warranty</a>
 		</nav>
 
         <!-- Free Estimate Popup -->
@@ -64,7 +64,7 @@
                 <p class="font-bold mb-2">Contact us for a free estimate!</p>
                 <p>Email: info.cabinetsandclosets@gmail.com</p>
                 <p>Phone: (561) 221-2681</p>
-                <button @click="toggleMobileNavPopup()" class="mt-4 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Close</button>
+                <button @click="toggleMobileNavPopup()" class="mt-4 bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">Close</button>
             </div>
         </div>
 
@@ -166,7 +166,7 @@
         z-index: 100;
         transition: 0.5s;
 
-        background-color: rgba(20, 22, 72, 0.99);
+        background-color: rgba(0, 0, 0);
         display: flex;
         flex-direction: row;
         position: sticky;
@@ -179,12 +179,12 @@
 
     .smallHeader {
         /* Smaller height and higher opacity */
-        height: 80px;
+        height: 70px;
         opacity: 0.8;
         z-index: 100;
         transition: 0.5s;
 
-        background-color: rgba(20, 22, 72, 0.99);
+        background-color: rgba(0, 0, 0);
         display: flex;
         flex-direction: row;
         position: sticky;
@@ -292,7 +292,7 @@
 
     .desktop_dropdown_menu a:hover {
         background-color: #ddd;
-        color: orange;
+        color: purple;
     }
 
     .mobile_group {
@@ -328,7 +328,7 @@
         border-radius: 5px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
         text-align: center;
-        border: 2px solid orange;
+        border: 2px solid purple;
         opacity: 100% !important;
     }
 
