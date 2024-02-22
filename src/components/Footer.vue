@@ -4,8 +4,8 @@
             <!-- Logo and about section -->
             <div class="w-full md:w-1/4 mb-6 md:pr-6 md:mb-0">
                 <div class="flex items-center text-xl mb-4 justify-center">
-                    <img src="../../C&C_logo_white.svg" alt="Cabinets and Closets Logo" class="hidden md:block mr-2 h-52 w-52"/>
-                    <img src="../../C&C_logo_white.png" alt="Cabinets & Closets Logo" class="block md:hidden mr-2 h-52 w-52"/>
+                    <img src="../../OwnEnergyLogo.svg" alt="Own Energy Logo" class="hidden md:block mr-2 h-52 w-52"/>
+                    <img src="../../OwnEnergyLogo.webp" alt="Own Energy Logo" class="block md:hidden mr-2 h-52 w-52"/>
                 </div>
             </div>
     
